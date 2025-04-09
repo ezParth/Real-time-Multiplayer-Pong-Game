@@ -72,6 +72,10 @@ const Game: React.FC = () => {
     }
   }, [playerY, computerY, ball, restartGame]);
 
+  useEffect(() => {
+    // console.log("Game Over.")
+  }, [restartGame])
+
   return (
     <div className="w-full h-screen flex justify-center items-center bg-gray-900">
       <div
